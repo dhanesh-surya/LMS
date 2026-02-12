@@ -1,0 +1,23 @@
+
+- In PowerShell, from the project root:
+```
+cd D:\library\olms
+py -3.11 manage.py runserver
+```
+- Optional with a specific host/port:
+```
+py -3.11 manage.py runserver 0.0.0.
+0:8000
+```
+If you’re using an activated virtualenv, you can also run:
+
+```
+python manage.py runserver
+
+Admin Login
+
+- Username: admin
+- Password: admin123
+- App login: http://127.0.0.1:8000/Login
+- Django admin: http://127.0.0.1:8000/admin/
+```
