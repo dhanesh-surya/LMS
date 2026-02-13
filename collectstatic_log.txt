@@ -1,0 +1,29 @@
+Post-processing 'assets\vendors\jquery-contextmenu\jquery.contextMenu.min.css' failed!
+
+Traceback (most recent call last):
+  File "D:\library\olms\manage.py", line 22, in <module>
+    main()
+  File "D:\library\olms\manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\dns\AppData\Roaming\Python\Python311\site-packages\django\core\management\__init__.py", line 442, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\dns\AppData\Roaming\Python\Python311\site-packages\django\core\management\__init__.py", line 436, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "C:\Users\dns\AppData\Roaming\Python\Python311\site-packages\django\core\management\base.py", line 413, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "C:\Users\dns\AppData\Roaming\Python\Python311\site-packages\django\core\management\base.py", line 459, in execute
+    output = self.handle(*args, **options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dns\AppData\Roaming\Python\Python311\site-packages\django\contrib\staticfiles\management\commands\collectstatic.py", line 209, in handle
+    collected = self.collect()
+                ^^^^^^^^^^^^^^
+  File "C:\Users\dns\AppData\Roaming\Python\Python311\site-packages\django\contrib\staticfiles\management\commands\collectstatic.py", line 154, in collect
+    raise processed
+whitenoise.storage.MissingFileError: The file 'assets/vendors/jquery-contextmenu/font/context-menu-icons.eot' could not be found with <whitenoise.storage.CompressedManifestStaticFilesStorage object at 0x000001FC84535950>.
+
+The CSS file 'assets\vendors\jquery-contextmenu\jquery.contextMenu.min.css' references a file which could not be found:
+  assets/vendors/jquery-contextmenu/font/context-menu-icons.eot
+
+Please check the URL references in this CSS file, particularly any
+relative paths which might be pointing to the wrong location.
+
